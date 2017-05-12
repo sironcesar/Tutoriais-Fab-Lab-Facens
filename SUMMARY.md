@@ -1,6 +1,6 @@
 # Summary
 
 * [Introdução](README.md)
-* [First Chapter](chapter1.md)
-* testedelivro
+* [Regras de Design para PCBs](chapter1.md)
+* [FabModules para PCBs](fabmodules-para-pcbs.md)
 

@@ -51,7 +51,7 @@ Como toda PCB é diferente, aqui estão algumas dicas ao escolher uma ferramenta
 
 ### Regras de Design
 
-#### Espaçamento entre traços e componentes
+#### Espaçamento entre trilhas e componentes
 
 Ao fazer o design do circuito na sua placa, independente do software utilizado, é importante levar em consideração a distância entre cada um dos elementos na sua placa, pois o espaço entre estes elementos devem ser dedicados ao tamanho da ferramenta que você precisará para fresar a placa.
 
@@ -76,10 +76,4 @@ A espessura mínima das trilhas que sugerimos é de 0,3048mm \(0.012in / 12mil /
 Além disso, trilhas muito finas poder ser um problema ao fazer sua placa com fresas piramidais, pois caso a placa esteja empenada, nos pontos mais altos da placa a fresa piramidal retirará mais material, deixando sua trilha mais fina.
 
 ![](/assets/policy_abso1.jpg)
-
-
-
-
-
-
 
