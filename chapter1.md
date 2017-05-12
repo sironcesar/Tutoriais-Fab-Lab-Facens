@@ -53,9 +53,33 @@ Como toda PCB é diferente, aqui estão algumas dicas ao escolher uma ferramenta
 
 #### Espaçamento entre traços e componentes
 
+Ao fazer o design do circuito na sua placa, independente do software utilizado, é importante levar em consideração a distância entre cada um dos elementos na sua placa, pois o espaço entre estes elementos devem ser dedicados ao tamanho da ferramenta que você precisará para fresar a placa.
+
+Por exemplo, se você deseja utilizar uma fresa de topo reto de 1mm, suas trilhas, pads e furos devem ter espaços entre eles iguais ou maiores que 1mm.
+
+O mesmo vale para furos - o  diâmetro interno de cada furo precisa ser maior que a ferramenta que você planeja utilizar para fura-lo.
+
+Se você for utilizar componentes SMD os pads precisam ter espaço suficiente para a ferramenta passar entre eles e isolar cada pad.
+
+#### Vias em placas dupla-face
+
+Se sua placa é dupla face e contém vias \(conexões elétricas entre as duas faces da placa\) você precisará criar uma conexão entre eles manualmente quando for soldar os componentes.
+
+#### Planos de Terra/VCC
+
+Se a sua placa é projetada com um plano de terra, confira se a isolação dos em relação aos traços estão configurados para ter ao menos a mesma dimensão da menor ferramenta que você pretende utilizar.
+
+#### Espessura das trilhas
+
+A espessura mínima das trilhas que sugerimos é de 0,3048mm \(0.012in / 12mil / T12\) pois trilhas mais finas que isso têm maior propensão a se descolar da placa. Recomendamos utilizar as trilhas mais largas que sua placa pode suportar, desde que respeite também os espaçamentos entre os elementos da placa.
+
+Além disso, trilhas muito finas poder ser um problema ao fazer sua placa com fresas piramidais, pois caso a placa esteja empenada, nos pontos mais altos da placa a fresa piramidal retirará mais material, deixando sua trilha mais fina.
+
+![](/assets/policy_abso1.jpg)
 
 
-### 
+
+
 
 
 
