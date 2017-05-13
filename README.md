@@ -4,5 +4,3 @@ Uma coleção de tutoriais para auxiliar estudantes e usuários utilizar os equi
 
 Criado pela equipe Fab Lab Facens e Fab Lab Newton.
 
-Download [index](https://sironcesar.gitbooks.io/tutoriais-fab-lab-facens/content/index.html)
-
