@@ -77,3 +77,25 @@ Além disso, trilhas muito finas poder ser um problema ao fazer sua placa com fr
 
 ![](/assets/policy_abso1.jpg)
 
+Outra consideração importante sobre a espessura da trilha é a corrente que ela deve suportar. Abaixo, temos uma tabela que ajudará no dimensionamento da largura de trilha para uma determinada corrente.
+
+| Corrente | Largura da trilha \(mil/th\) | Largura da trilha \(mil/th\) |
+| :--- | :--- | :--- |
+| \(A\) | para 1 oz | para 2 oz |
+| 1 | 10 | 5 |
+| 2 | 30 | 15 |
+| 3 | 50 | 25 |
+| 4 | 80 | 40 |
+| 5 | 110 | 55 |
+| 6 | 150 | 75 |
+| 7 | 180 | 90 |
+| 8 | 220 | 110 |
+| 9 | 260 | 130 |
+| 10 | 300 | 150 |
+
+Oz é a espessura do cobre do laminado \(fenolite, fibra de vidro etc\).
+
+A espessura do cobre do laminado é especificado para o fabricante de placa de circuito impresso, o mais comum é 1 oz.
+
+Exemplificando, para uma largura de trilha de 30 mils, usando-se uma placa com espessura de 1 oz, essa trilha suportará 2 A.
+
