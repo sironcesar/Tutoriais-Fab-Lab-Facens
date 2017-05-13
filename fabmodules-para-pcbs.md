@@ -41,15 +41,11 @@ Caso você não utilize plano de terra, sua imagem deverá ficar semelhante à i
 
 ![](/assets/top_traces.png)
 
-
-
 Furos
 
 Neste caso você deve fazer os furos em preto, e deixar todo o restante da placa com a cor branca. Sua imagem final para os furos deverá ficar semelhante à imagem abaixo.
 
 ![](/assets/top_drills.png)
-
-
 
 Corte
 
@@ -59,11 +55,13 @@ Para o desenho do corte é importante gerar uma imagem com o centro da placa em 
 
 A parte em branco geralmente pode ser conseguida exportando a borda ou a dimensão da placa.
 
-No Eagle a dimensão vem apenas como uma linha. Neste caso você pode utilizar a ferramenta de preenchimento \(shift+B\) do gimp para preencher a parte interna de branco.
+No Eagle a dimensão vem apenas como uma linha. Neste caso você pode utilizar a ferramenta de preenchimento \(shift+B\) do GIMP para preencher a parte interna de branco.
 
-Caso a linha de dimensão venha junto ao limite da borda da imagem você deverá aumentar o tamanho da sua imagem
+Caso a linha de dimensão venha junto ao limite da borda da imagem você deverá aumentar o tamanho da sua imagem, utilizando a ferramenta "Imagem&gt;Tamanho da tela de pintura". Aumente a sua imagem em 100px na altura e 100 px na largura.
 
+![](/assets/pcb1.png)
 
+Após mudar o tamanho da tela de pintura, crie uma nova camada e pinte ela de preto utilizando a "Ferramenta de preenchimento" no menu lateral esquerdo. Arraste a sua camada para baixo da imagem.
 
-
+![](/assets/pcb2.png)![](/assets/pcb3.png)Após este processo, exporte sua imagem com extensão .png
 
