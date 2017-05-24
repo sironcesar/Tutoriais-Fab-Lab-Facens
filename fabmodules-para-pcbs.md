@@ -84,8 +84,6 @@ Após exportar as imagens, você deverá carregá-las no Fab Modules e escolher 
 
 ![](/assets/pcb5.png)
 
-##### Gerando os códigos para trilhas de condução
-
 Após selecionar o equipamento, você deve alterar as configurações de velocidade \(speed mm/s\) e de posição inicial da ferramenta \(x0, y0 e z0\). As posições iniciais serão sempre zero, pois posteriormente você definirá as posições iniciais no equipamento.
 
 A velocidade diz respeito à velocidade de avanço da ferramenta ao usinar a placa. Este parâmetro irá depender do tipo de fresa utilizada. Para fresas de topo reto utilize uma velocidade de avanço baixa \(2 a 4 mm/s\). Pra fresas de gravação piramidais, utilize uma velocidade de avanço média \(8 a 10 mm/s\).
@@ -94,9 +92,9 @@ A velocidade diz respeito à velocidade de avanço da ferramenta ao usinar a pla
 
 Posteriormente você deverá alterar os parâmetros referentes à ferramenta que você irá utilizar, que são os parâmetros de profundidade de corte \(cut depth\) e o diâmetro da ferramenta \(tool diameter\). Existe uma relação entre a profundidade de corte \(cut depth\) e o diâmetro da ferramenta \(tool diameter\) que deve ser respeitada. De maneira geral a profundidade de corte não pode ser maior que um quarto do diâmetro da ferramenta, pois desta maneira você corre o risco de forçar a utilização da ferramenta durante o processo de furação ou corte.
 
-Outros parâmetros importantes são os números de deslocamentos laterais ou rebordos \(number of offsets\), que define quantos passes ao redor das trilhas a ferramenta irá passar para retirar material isolando as trilhas de condução, e a sobreposição de deslocamentos laterais \(offset overlap %\) que define o quanto o passe seguinte irá sobrepor ao primeiro, levando em consideração o diâmetro da ferramenta. 
+Outros parâmetros importantes são os números de deslocamentos laterais ou rebordos \(number of offsets\), que define quantos passes ao redor das trilhas a ferramenta irá passar para retirar material isolando as trilhas de condução, e a sobreposição de deslocamentos laterais \(offset overlap %\) que define o quanto o passe seguinte irá sobrepor ao primeiro, levando em consideração o diâmetro da ferramenta.
 
-O FabModules foi feito para trabalhar principalmente com componentes eletrônicos SMD, que não necessitam de furos. O processo "PCB outline" vem com parâmetros padrões para corte final da placa, assim vários destes parâmetros precisam ser modificados ao fazer furações. 
+O FabModules foi feito para trabalhar principalmente com componentes eletrônicos SMD, que não necessitam de furos. O processo "PCB outline" vem com parâmetros padrões para corte final da placa, assim vários destes parâmetros precisam ser modificados ao fazer furações.
 
 |  | Trilhas | Furação | Corte |
 | :--- | :---: | :---: | :---: |
@@ -110,13 +108,7 @@ O FabModules foi feito para trabalhar principalmente com componentes eletrônico
 | number of offsets | 1 a 4 | 1 | 1 |
 | offset overlap \(%\) | 65 | 50 | 50 |
 
-
-
 Os demais parâmetros podem ser mantidos.
 
 Após estas definições clique em "save" e salve o arquivo com extensão .rml em uma pasta ou pendrive para levar ao software do equipamento. Lembre-se que cada processo deve gerar um arquivo diferente. Salve o nome dos arquivos para fácil identificação posterior como por exemplo: trilhas.rml furos.rml e corte.rml
-
-
-
-
 
