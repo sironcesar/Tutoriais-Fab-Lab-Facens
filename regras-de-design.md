@@ -93,9 +93,9 @@ Outra consideração importante sobre a espessura da trilha é a corrente que el
 | 9 | 260 | 130 |
 | 10 | 300 | 150 |
 
-Oz é a espessura do cobre do laminado \(fenolite, fibra de vidro etc\).
+Oz é a unidade de medida espessura do cobre do laminado \(fenolite, fibra de vidro etc\) para PCBs.
 
-A espessura do cobre do laminado é especificado para o fabricante de placa de circuito impresso, o mais comum é 1 oz.
+A espessura do cobre do laminado é especificado pelo fabricante da placa de circuito impresso, o mais comum é 1 oz \(0.0347 mm\)
 
 Exemplificando, para uma largura de trilha de 30 mils, usando-se uma placa com espessura de 1 oz, essa trilha suportará 2 A.
 
