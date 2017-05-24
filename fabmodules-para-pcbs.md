@@ -65,97 +65,56 @@ Após mudar o tamanho da tela de pintura, crie uma nova camada e pinte ela de pr
 
 ![](/assets/pcb2.png)![](/assets/pcb3.png)Após este processo, exporte sua imagem com extensão .png mantendo a mesma resolução original. Para exportar aimagem basta ir em "Arquivo&gt;Exportar como". Escolha o nome do arquivo e digite .png na frente, e o software irá automaticamente exportar a imagem como PNG.
 
+### Passo 2: Gerando códigos com o Fab Modules
 
+Após exportar as imagens, você deverá carregá-las no Fab Modules e escolher as configurações do equipamento, processo e ferramentas utilizados. Para isso acesse o site [http://fabmodules.org](http://fabmodules.org) e siga os passos a seguir:
 
-Passo 2: Gerando códigos com o Fab Modules
+1\) Selecione o tipo de imagem para carregar em "input format&gt;image\(.png\)" e carregue a imagem.
 
-Após exportar as imagens, você deverá carregá-las no Fab Modules e escolher as configurações do equipamento, processo e ferramentas utilizados. Para isso acesse o site http://fabmodules.org e siga os passos a seguir:
+2\) Selecione o tipo de saída do código em "output format \(.rml\).
 
-1\) Selecione o tipo de imagem para carregar em "input format&gt;image\(.png\)" e carregue a imagem
-
-2\) Selecione o tipo de saída do código em "output format \(.rml\)
-
-3\) Selecione o tipo de processo em "process&gt;PCB traces \(1/64\)" para trilhas ou "process&gt;PCB outline" para furos ou cortes
-
-
-
-
-
-
+3\) Selecione o tipo de processo em "process&gt;PCB traces \(1/64\)" para trilhas ou "process&gt;PCB outline" para furos ou cortes.
 
 4\) Confira o valor da resolução e dimensões da imagem. \(ATENÇÃO!\)
-
-
-
-
 
 * O Proteus exporta imagens somente em .BMP. Utilizando o GIMP você pode exportar como .PNG, porém a imagem perde o registro da resolução de imagem. Portanto altere para o valor original de resolução exportado \(recomendo 600 dpi\).
 * Alguns modelos de computadores como o Macbook Pro Retina exportam as imagens do software Eagle com o dobro da resolução registrada na imagem, deixando a sua placa com o dobro das dimensões totais. Assim se você exportou sua imagem com 500 dpi de resolução, sua imagem terá na verdade 1000 dpi de resolução. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5\)
-
-* 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+5\) Escolha o modelo do equipamento que será utilizado. No Fab Lab Facens e Fab Lab Newton a máquina é do modelo MDX-40.
 
 ![](/assets/pcb5.png)
 
+##### Gerando os códigos para trilhas de condução
 
+Após selecionar o equipamento, você deve alterar as configurações de velocidade \(speed mm/s\) e de posição inicial da ferramenta \(x0, y0 e z0\). As posições iniciais serão sempre zero, pois posteriormente você definirá as posições iniciais no equipamento.
+
+A velocidade diz respeito à velocidade de avanço da ferramenta ao usinar a placa. Este parâmetro irá depender do tipo de fresa utilizada. Para fresas de topo reto utilize uma velocidade de avanço baixa \(2 a 4 mm/s\). Pra fresas de gravação piramidais, utilize uma velocidade de avanço média \(8 a 10 mm/s\).
+
+![](/assets/pcb6.png)
+
+Posteriormente você deverá alterar os parâmetros referentes à ferramenta que você irá utilizar, que são os parâmetros de profundidade de corte \(cut depth\) e o diâmetro da ferramenta \(tool diameter\). Existe uma relação entre a profundidade de corte \(cut depth\) e o diâmetro da ferramenta \(tool diameter\) que deve ser respeitada. De maneira geral a profundidade de corte não pode ser maior que um quarto do diâmetro da ferramenta, pois desta maneira você corre o risco de forçar a utilização da ferramenta durante o processo de furação ou corte.
+
+Outros parâmetros importantes são os números de deslocamentos laterais ou rebordos \(number of offsets\), que define quantos passes ao redor das trilhas a ferramenta irá passar para retirar material isolando as trilhas de condução, e a sobreposição de deslocamentos laterais \(offset overlap %\) que define o quanto o passe seguinte irá sobrepor ao primeiro, levando em consideração o diâmetro da ferramenta. 
+
+O FabModules foi feito para trabalhar principalmente com componentes eletrônicos SMD, que não necessitam de furos. O processo "PCB outline" vem com parâmetros padrões para corte final da placa, assim vários destes parâmetros precisam ser modificados ao fazer furações. 
+
+|  | Trilhas | Furação | Corte |
+| :--- | :---: | :---: | :---: |
+| Processo | PCB traces \(1/64\) | PCB outline \(1/32\) | PCB outline \(1/32\) |
+| Ferramenta utilizada | Piramidal 60° | Topo reto 0,4 a 1mm | Topo reto 1mm ou maior |
+| speed \(mm/s\) | 8 a 10 | 2 a 4 | 2 a 4 |
+| x0, y0, z0 | 0 | 0 | 0 |
+| cut depth \(mm\) | 0.1 | 0.1 a 0.25 \(1/4 do diâmetro\) | 0.25 \(1/4 do diâmetro\) |
+| stock thickness \(mm\) \[espessura da placa\] | Não aplicável | 1.7 | 1.7 |
+| tool diameter \(mm\) | 0.4 | 0.4 até 1 mm | 1mm ou maior |
+| number of offsets | 1 a 4 | 1 | 1 |
+| offset overlap \(%\) | 65 | 50 | 50 |
+
+
+
+Os demais parâmetros podem ser mantidos.
+
+Após estas definições clique em "save" e salve o arquivo com extensão .rml em uma pasta ou pendrive para levar ao software do equipamento. Lembre-se que cada processo deve gerar um arquivo diferente. Salve o nome dos arquivos para fácil identificação posterior como por exemplo: trilhas.rml furos.rml e corte.rml
 
 
 
