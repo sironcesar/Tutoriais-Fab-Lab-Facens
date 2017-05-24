@@ -110,5 +110,5 @@ O FabModules foi feito para trabalhar principalmente com componentes eletrônico
 
 Os demais parâmetros podem ser mantidos.
 
-Após estas definições clique em "save" e salve o arquivo com extensão .rml em uma pasta ou pendrive para levar ao software do equipamento. Lembre-se que cada processo deve gerar um arquivo diferente. Salve o nome dos arquivos para fácil identificação posterior como por exemplo: trilhas.rml furos.rml e corte.rml
+Após estas definições clique em "save" e salve o arquivo com extensão .rml em uma pasta ou pendrive para levar ao software do equipamento. Lembre-se que cada processo deve gerar um arquivo diferente. Salve o nome dos arquivos para fácil identificação posterior como por exemplo: trilhas.rml furos.rml e corte.rml.
 
