@@ -79,7 +79,7 @@ Além disso, trilhas muito finas poder ser um problema ao fazer sua placa com fr
 
 Outra consideração importante sobre a espessura da trilha é a corrente que ela deve suportar. Abaixo, temos uma tabela que ajudará no dimensionamento da largura de trilha para uma determinada corrente.
 
-| Corrente | Largura da trilha \(mil/th\) | Largura da trilha \(mil/th\) |
+| Corrente | Largura da trilha \(mil, th\) | Largura da trilha \(mil, th\) |
 | :--- | :--- | :--- |
 | \(A\) | para 1 oz | para 2 oz |
 | 1 | 10 | 5 |
